@@ -1,0 +1,17 @@
+{
+  "vendor": "mexbepensamkp",
+  "name": "popup",
+  "version": "0.0.1",
+  "builders": {
+    "store": "0.x",
+    "react": "3.x"
+  },
+  "mustUpdateAt": "2018-09-05",
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
