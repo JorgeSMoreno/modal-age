@@ -1,6 +1,6 @@
 {
   "vendor": "mexbepensamkp",
-  "name": "popup",
+  "name": "mexbepensamkp-components",
   "version": "0.0.1",
   "builders": {
     "store": "0.x",
