@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { withRuntimeContext } from 'vtex.render-runtime'
 import { ModalDialog } from 'vtex.styleguide'
+import logo from '../assets/logo.png'
 
 function getCookie(name) {
   var nameEQ = name + "=";
@@ -45,7 +46,7 @@ class AdulthoodModal extends Component {
   }
 
   redirectOnCancel = () => {
-    window.location.href = "/aviso-de-privacidad";
+    location.replace("https://www.wikipedia.com")
   };
 
   handleModalToggle = () => {
@@ -64,18 +65,21 @@ class AdulthoodModal extends Component {
           showCloseIcon={false}
           confirmation={{
             onClick: this.handleModalToggle,
-            label: 'Si',
+            label: 'Yep',
           }}
           cancelation={{
             onClick: this.redirectOnCancel,
-            label: 'No',
+            label: 'Nop',
           }}
           isOpen={this.state.showModal}
           >
           <div className="dark-gray">
-            <h1>¿Tienes 18 años?</h1>
-            <p>
-              Por favor verifica tu edad. Debes tener 18 años mínimos para ingresar a este sitio.
+          <img src={logo} width="163px" />
+            <h2 className="f3 white">¡Hola!</h2>
+            <h1 className="f2 white">¿Ya eres mayor de edad?</h1>
+            <p className="f5 white">
+              Al ingresar a este sitio declaras tener <br/>
+              la edad legal en tu país para poder beber alcohol
             </p>
           </div>
         </ModalDialog>
