@@ -1,5 +1,8 @@
 {
     "modalpopup": {
         "component": "Modalpopup"
+    },
+    "drinkmood": {
+        "component": "Drinkmood"
     }
 }

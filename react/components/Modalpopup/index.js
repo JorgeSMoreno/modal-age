@@ -46,7 +46,7 @@ class AdulthoodModal extends Component {
   }
 
   redirectOnCancel = () => {
-    location.replace("https://www.wikipedia.com")
+    location.replace("http://www.alcoholinformate.org.mx/")
   };
 
   handleModalToggle = () => {
