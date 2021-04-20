@@ -51,7 +51,7 @@ class AdulthoodModal extends Component {
 
   handleModalToggle = () => {
     var expireDate = new Date();
-        expireDate = new Date(expireDate.getFullYear(), expireDate.getMonth(), expireDate.getDate()+10);
+        expireDate = new Date(expireDate.getFullYear(), expireDate.getMonth(), expireDate.getDate()+1);
 
     createCookie("popupAge", true, expireDate) 
     this.setState({ showModal: false })
